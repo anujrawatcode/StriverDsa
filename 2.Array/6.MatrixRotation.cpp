@@ -7,6 +7,22 @@ using namespace std;
 
 // transpose and reverse every row
 
+// void rotate(vector<vector<int>>& m) {
+        
+//         int n=m.size();
+        
+//         for(int i=0; i<n; i++) {
+//             for(int j=0; j<n; j++) {
+//                 if(i>=j)
+//                     continue;
+//                 swap(m[i][j], m[j][i]);
+//             }
+//         }
+//         for(int i=0; i<n; i++) {
+//             reverse(m[i].begin(), m[i].end());
+//         }
+//     }
+
 void swapItem(vector<int> &temp)
 {
     for (int i = 0; i < temp.size() / 2; i++)
