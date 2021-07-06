@@ -15,23 +15,23 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-vector<int> twoSum(vector<int> &arr, int target)
+vector<int> twoSum(vector<int> &nums, int target)
 {
 
+    vector<int> vec(2);
     unordered_map<int, int> mp;
-
-    for (int i = 0; i < arr.size(); i++)
+    for (int i = 0; i < nums.size(); i++)
     {
-        int temp = target - arr[i];
+        int temp = target - nums[i];
         if (mp.find(temp) != mp.end())
         {
-            cout << (mp[temp]);
-            cout << (i);
-            return ;
+
+            vec[0] = mp[temp];
+            vec[1] = i;
         }
-        mp[arr[i]] = i;
+        mp[nums[i]] = i;
     }
-    cout<<"No ans";
+    return vec;
 }
 
 int main()

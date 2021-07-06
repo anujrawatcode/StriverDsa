@@ -1,6 +1,11 @@
+// https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/
+
+//
+
 #include <bits/stdc++.h>
 using namespace std;
 
+// same as meeting in a room
 bool comp(const pair<int, int> &a,
           const pair<int, int> &b)
 {
@@ -30,7 +35,6 @@ int solve(int start[], int finish[], int n)
     }
     return activity;
 }
-
 
 int main()
 {
