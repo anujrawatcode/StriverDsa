@@ -1,6 +1,6 @@
 // https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#
 
-//
+// https://drive.google.com/drive/folders/1YjlZ6f1-3Lct3u5CFjq5yX-wMOISaD49?usp=sharing
 
 int findPlatform(int arr[], int dep[], int n)
 {
