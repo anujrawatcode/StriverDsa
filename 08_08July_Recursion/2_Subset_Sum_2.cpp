@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+https://drive.google.com/drive/folders/1CN2KM4FzZt1cyz7YJ61YXnaiRwoBd3YQ?usp=sharing
+
 class Solution {
 private: 
     void findSubsets(int ind, vector<int> &nums, vector<int> &ds, vector<vector<int>> &ans) {

@@ -1,6 +1,6 @@
 // https://practice.geeksforgeeks.org/problems/subset-sums2234/1
 
-//
+// https://drive.google.com/drive/folders/1CN2KM4FzZt1cyz7YJ61YXnaiRwoBd3YQ?usp=sharing
 
 #include <bits/stdc++.h>
 using namespace std;
