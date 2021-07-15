@@ -1,3 +1,6 @@
+// https : //leetcode.com/problems/maximum-subarray/
+// https://drive.google.com/drive/folders/1F42i9S7-OVz3O4__UQVLtQigcRT0VD37?usp=sharing
+
 // Maximum Subarray
 // Given an integer array nums, find the contiguous subarray (containing at least one number)
 // which has the largest sum and return its sum.
@@ -14,22 +17,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int maxSubArray(vector<int> &nums)
+{
+    int sum = 0;
+    int ans = nums[0];
+
+    for (int i = 0; i < nums.size(); i++)
+    {
+        sum += nums[i];
+        ans = max(ans, sum);
+        if (sum < 0)
+            sum = 0;
+    }
+    return ans;
+}
+
 int main()
 {
-    int n = 9;
-    int nums[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    int maxi = INT_MIN;
-    int sum = 0;
-
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = 0; j < n - 1; j++)
-        {
-            for (int k = i; k <= j; k++)
-            {
-                sum = sum + nums[k];
-                maxi = max(sum, temp);
-            }
-        }
-    }
 }

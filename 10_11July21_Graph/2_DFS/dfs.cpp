@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
+class Solution_Recursive
 {
 public:
     void DFS(vector<int> adj[], int src, vector<bool> &visit, vector<int> &result)
@@ -25,8 +25,8 @@ public:
         return result;
     }
 };
-    
-class Solution
+
+class Solution_Iterative
 {
 public:
     void DFS(vector<int> adj[], vector<int> result, vector<bool> visit, int src)
@@ -43,9 +43,7 @@ public:
 
             for (auto v : adj[u])
                 if (!visit[v])
-                {
                     stk.push(v);
-                }
         }
     }
 

@@ -1,5 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
-
+// https://drive.google.com/drive/folders/1F42i9S7-OVz3O4__UQVLtQigcRT0VD37?usp=sharing
 #include <bits/stdc++.h>
 using namespace std;
 
