@@ -1,13 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int max(int a, int b)
-{
-    if (a > b)
-        return a;
-    return b;
-}
-
+// Neive Approch
 bool allUnique(string s)
 {
     unordered_map<char, int> mp;
@@ -37,6 +31,7 @@ void solve(string s)
     }
     cout << maxi;
 }
+
 int main()
 {
     string s;

@@ -1,7 +1,6 @@
 
 // https://leetcode.com/problems/set-matrix-zeroes/
 
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -39,3 +38,4 @@ void setZeroes(vector<vector<int>> &matrix)
         for (int i = 0; i < c; i++)
             matrix[0][i] = 0;
 }
+

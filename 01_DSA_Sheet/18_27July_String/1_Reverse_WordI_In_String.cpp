@@ -16,25 +16,25 @@ void swap(char *a, char *b)
     *b = temp;
 }
 
-void solve(string &s)
+string reverseWords(string s)
 {
-    int n = s.length();
-    for (int i = 0; i < n / 2; i++)
-        swap(s[i], s[n - i - 1]);
+    vector<string> ans;
+    istringstream ss(s);
+    string word = s;
+    while (ss >> word)
+        ans.push_back(word);
 
-    auto i = s.begin();
-    for (auto j = s.begin(); j != s.end() + 1; j++)
+    reverse(ans.begin(), ans.end());
+
+    string temp = "";
+    for (int i = 0; i < ans.size(); i++)
     {
-        if (*j == ' ' || j == s.end())
-        {
-            reverse(i, j);
-            i = j + 1;
-            j++;
-        }
+        temp += ans[i] + " ";
     }
-    cout << s;
-}
 
+    temp.pop_back();
+    return temp;
+}
 int main()
 {
     string s;

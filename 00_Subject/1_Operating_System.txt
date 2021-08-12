@@ -1,0 +1,7 @@
+Gate Smashers
+
+https://drive.google.com/drive/folders/1XcTOM21IsUj07bCNn0u2JL3JVPA81Y-N?usp=sharing
+
+1. Intro
+2. Process Scheduling
+3. Process Synchronisation

@@ -11,18 +11,13 @@ using namespace std;
 //         return editDis_Rc(s1, s2, n1 - 1, n2 - 1);
 //     else
 //         return 1 + min(editDis_Rc(s1, s2, n1 - 1, n2),
-//                        editDis_Rc(s1, s2, n1, n2 - 1),
-//                        editDis_Rc(s1, s2, n1 - 1, n2 - 1));
+//                        editDis_Rc(s1, s2, n1, n2 - 1),      // 
+//                        editDis_Rc(s1, s2, n1 - 1, n2 - 1)); // replace
 // }
 
 int MINI(int a, int b, int c)
 {
-    if (a <= b && a <= c)
-        return a;
-    else if (b <= a && b <= c)
-        return b;
-    else
-        return c;
+    return min(a, min(b, c));
 }
 
 int editDis_dp(string s1, string s2, int n1, int n2)

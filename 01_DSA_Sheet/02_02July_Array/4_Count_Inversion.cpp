@@ -17,5 +17,4 @@ int main()
 {
     int n = 4;
     int arr[] = {8, 4, 2, 1};
-    
 }

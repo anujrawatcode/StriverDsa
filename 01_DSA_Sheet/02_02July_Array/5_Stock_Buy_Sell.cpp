@@ -16,22 +16,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxProfit(vector<int> &prices)
-{
-    int n = prices.size();
-    int min = INT_MAX;
-    int pft = 0;
+int maxProfit(vector<int>& prices) {
+        int n = prices.size();
+        int ans = INT_MIN;
+        int minSoFar = INT_MAX; 
 
-    for (int i = 0; i < n; i++)
-    {
-        if (prices[i] < min)
-            min = prices[i];
-        if (prices[i] - min > pft)
-            pft = prices[i] - min;
+        for(int i=0; i<n; i++) {
+
+            minSoFar = min(minSoFar, prices[i]);
+            int profit = prices[i]-minSoFar;
+            ans = max(ans, profit);
+            
+        }
+        return ans;
     }
-
-    return pft;
-}
 
 int main()
 {
