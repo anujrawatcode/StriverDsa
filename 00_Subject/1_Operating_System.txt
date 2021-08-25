@@ -5,3 +5,270 @@ https://drive.google.com/drive/folders/1XcTOM21IsUj07bCNn0u2JL3JVPA81Y-N?usp=sha
 1. Intro
 2. Process Scheduling
 3. Process Synchronisation
+
+
+
+1. What is the main purpose of an operating system ? Discuss different types? 
+   Memory Management,
+   Security,
+   Input/Output Management,
+   Process Scheduling, 
+   File Management,
+
+   Different types of OS are : 
+   Batch, Multi-Programmming, Multi-Processing, 
+
+2. What is a socket, kernel and monolithic kernel ? 
+
+   a socket can also be referred to as an endpoint for interprocess communication(IPC) within the operating system(OS)
+
+   Kernel is central component of an operating system that manages operations of computer and hardware,
+   It basically manages operations of memory and CPU time. It is core component of an operating system,
+   Kernel loads first into memory when an operating system is loaded and remains into memory until operating system is shut down again,
+   It is responsible for various tasks such as disk management, task management, and memory management,
+   It decides which process should be allocated to processor to execute and which process should be kept in main memory to execute
+
+   1. Monolithic Kernel –,
+   
+   It is one of types of kernel where all operating system services operate in kernel space. It has dependencies between systems components,
+   It has huge lines of code which is complex.
+
+   Example :  Unix, Linux, Open VMS, XTS-400 etc.
+
+3. Difference between process and program and thread? Different types of process,
+   
+   Process: Process means any program is in execution. 
+   Process takes more time to terminate and it is isolated means it does not share memory with any other process. 
+
+   The process can have the following states like new, ready, running, waiting, terminated, suspended.  
+
+   Thread:  Thread is the segment of a process means a process can have multiple threads and,
+    these multiple threads are contained within a process. A thread have 3 states: running, ready, and blocked. 
+
+    Thread takes less time to terminate as compared to process and like process threads do not isolate. 
+
+1.  Process means any program is in execution.	         Thread means segment of a process.
+2.	Process takes more time to terminate.        	     Thread takes less time to terminate.
+3.	It takes more time for creation.	                 It takes less time for creation.
+4.	It also takes more time for context switching.	     It takes less time for context switching.
+5.	Process is less efficient in term of communication.	 Thread is more efficient in term of communication.
+6.	Process consume more resources.	                     Thread consume less resources.
+7.	Process is isolated.                                 Threads share memory.
+
+ 
+4. Define virtual memory, thrashing, threads,
+   
+a  virtual memory is a feature of an operating system that enables a computer to be able to,
+   compensate shortages of physical memory by transferring pages of data from random access memory to disk storage.
+   This means that when RAM runs low, virtual memory can move data from it to a space called a paging file,
+   This process allows for RAM to be freed up so that a computer can complete the task.
+
+   Thrashing
+b  When a program need space larger than RAM or it need space when RAM is full,
+   Operating System will try to allocate space from secondary memory and behaves like it has that much amount of memory by,
+   serving to that program. This concept is called virtual memory,
+   To know about thrashing we first need to know what is page fault and swapping.
+
+   Page fault and swapping: We know every program divided into some pages,
+   When a program need a page which is not in RAM that is called page fault,
+   Whenever a page fault happens, OS will try to fetch that page from secondary memory and try to swap it with one of the page in RAM,
+   This is called swapping.
+
+   If this page fault and then swapping happening very frequently at higher rate,
+   then operating system has to spend more time to swap these pages. This state is called thrashing,
+   Because of this, CPU utilization is going to be reduced.
+
+   Technique to handle : Working Set Model, Page Fault Frequency
+
+c  A thread is a path of execution within a process. A process can contain multiple threads.
+   The idea is to achieve parallelism by dividing a process into multiple threads
+   There are two types of threads.
+         User Level Thread
+         Kernel Level Thread
+
+
+5. What is RAID ? Different types. 
+   
+   RAID (redundant array of independent disks) is a way of storing the same data in different places on multiple hard disks,
+   or solid-state drives (SSDs) to protect data in the case of a drive failure. 
+
+   RAID works by placing data on multiple disks and allowing input/output (I/O) operations to overlap in a balanced way, improving performance. 
+
+
+6. What is a deadlock ? Different conditions to achieve a deadlock. 
+
+   Deadlock is a situation where a set of processes are blocked because each process is holding a resource, 
+   and waiting for another resource acquired by some other process. 
+
+   Deadlock can arise if the following four conditions hold simultaneously (Necessary Conditions) 
+    Mutual Exclusion: One or more than one resource are non-shareable (Only one process can use at a time) 
+    Hold and Wait: A process is holding at least one resource and waiting for resources. 
+    No Preemption: A resource cannot be taken from a process unless the process releases the resource. 
+    Circular Wait: A set of processes are waiting for each other in circular form. 
+
+
+
+7. What is fragmentation? Types of fragmentation. 
+
+   Fragmentation is an unwanted problem in the operating system in which the processes are loaded and unloaded from memory,
+   and free memory space is fragmented. Processes can't be assigned to memory blocks due to their small size, and the memory blocks stay unused.
+   
+   Internal Fragmentation
+   External Fragmentation
+
+   Internal Fragmentation
+     When a process is allocated to a memory block, and if the process is smaller than the amount of memory requested, 
+     a free space is created in the given memory block. Due to this, the free space of the memory block is unused,
+     which causes internal fragmentation.
+
+     The problem of internal fragmentation may arise due to the fixed sizes of the memory blocks,
+     It may be solved by assigning space to the process via dynamic partitioning.
+
+  External Fragmentation
+     External fragmentation happens when a dynamic memory allocation method allocates some memory but leaves a small amount of memory unusable,
+     The quantity of available memory is substantially reduced if there is too much external fragmentation,
+     There is enough memory space to complete a request, but it is not contiguous. It's known as external fragmentation.
+
+
+What is spooling ? 
+   SPOOL is an acronym for simultaneous peripheral operations on-line,
+   It is a kind of buffering mechanism or a process in which data is temporarily held to be used and executed by a device, 
+   program or the system.
+
+   Spooling is a process in which data is temporarily held to be used and executed by a device, program or the system,
+   Data is sent to and stored in memory until the program requests it for execution.
+
+8. What is semaphore and mutex (Differences might be asked)? Define Binary semaphore. 
+
+   Semaphore is simply a variable that is non-negative and shared between threads,
+   This variable is used to solve the critical section problem and to achieve process synchronization in the multiprocessing environment. 
+
+   Binary Semaphore – 
+      This is also known as mutex lock. It can have only two values – 0 and 1. Its value is initialized to 1,
+      It is used to implement the solution of critical section problems with multiple processes.
+   Counting Semaphore – 
+      Its value can range over an unrestricted domain. It is used to control access to a resource that has multiple instances.
+
+
+9. Belady’s Anomaly
+
+10. Starving and Aging in OS
+    
+    Starvation or indefinite blocking is phenomenon associated with the Priority scheduling algorithms,
+    in which a process ready to run for CPU can wait indefinitely because of low priority,
+    In heavily loaded computer system, a steady stream of higher-priority processes can prevent a low-priority process from ever getting the CPU.
+
+   Aging : Aging is a technique of gradually increasing the priority of processes that wait in the system for a long time.
+
+11. Why does trashing occur? 
+    
+    Thrashing happen when your system starts spending more time in doing paging rather than performing computation,
+    Thrashing results in severe performance problems. 
+
+12. What is paging and why do we need it? 
+
+    In OS, Paging is a  mechanism used to retrieve processes from the secondary storage into the main memory in the form of pages.
+
+    The main idea behind the paging is to divide each process in the form of pages. The main memory will also be divided in the form of frames.
+
+    One page of the process is to be stored in one of the frames of the memory. The pages can be stored at the different locations of the memory
+
+    Pages of the process are brought into the main memory only when they are required otherwise they reside in the secondary storage.
+
+    eliminates the need for contiguous allocation of physical memory. This permits the physical address space of a process to be non–contiguous.
+
+    Paging reduces external Fragmentation
+
+13. Demand Paging, Segmentation 
+
+a   According to the concept of Virtual Memory, in order to execute some process, 
+    only a part of the process needs to be present in main memory which means that only few pages will only be present in the main memory at any time.
+
+    However, deciding, which pages need to be kept in the main memory and which need to be kept in the secondary memory,
+    is going to be difficult because we cannot say in advance that a process will require a particular page at particular time.
+
+    Therefore, to overcome this problem, there is a concept called Demand Paging is introduced,
+    It suggests keeping all pages of the frames in the secondary memory until they are required.
+    In other words, it says that do not load any page in the main memory until it is required.
+
+b   Segmentation is a memory management technique in which the memory is divided into the variable size parts.
+    Each part is known as a segment which can be allocated to a process.
+
+    The details about each segment are stored in a table called a segment table. Segment table is stored in one (or many) of the segments.
+
+    Segment table contains mainly two information about segment:
+
+        Base: It is the base address of the segment
+        Limit: It is the length of the segment.
+
+
+14. Real Time Operating System, types of RTOS. 
+    
+    Real-time operating systems (RTOS) are used in environments where a large number of events,
+     must be accepted and processed in a short time or within certain deadlines,
+      such applications are industrial control, telephone switching equipment, flight control, and real-time simulations. 
+
+      Hard Real-Time operating system
+      Soft real-time operating system
+      Firm Real-time Operating System
+
+
+15. Difference between main memory and secondary memory. 
+    
+    Primary memory	                                                                     Secondary memory
+
+  1.	Primary memory is temporary.                                                      	Secondary memory is permanent.
+
+  2.	Primary memory is directly accessible by Processor/CPU.	                            Secondary memory is not directly accessible by the CPU.
+
+  3.	Nature of Parts of Primary memory varies,
+        RAM- volatile in nature. ROM- Non-volatile.	It’s always                             Non-volatile in nature.
+
+  4.	Primary memory devices are more expensive than secondary storage devices.	        Secondary memory devices are less expensive when compared to primary memory devices.
+
+  5.	The memory devices used for primary memory are semiconductor memories.           	The secondary memory devices are magnetic and optical memories.
+
+  6.	Primary memory is also known as Main memory or Internal memory.                  	Secondary memory is also known as External memory or Auxiliary memory.
+
+  7.	Examples: RAM, ROM, Cache memory, PROM, EPROM, Registers, etc.                     	Examples: Hard Disk, Floppy Disk, Magnetic Tapes, etc.
+
+16. Dynamic Binding 
+   
+   Dynamic binding or late binding is the mechanism,
+   a computer program waits until runtime to bind the name of a method called to an actual subroutine,
+   It is an alternative to early binding or static binding where this process is performed at compile-time. 
+
+17. FCFS Scheduling 
+18. SJF Scheduling 
+19. SRTF Scheduling 
+20. LRTF Scheduling 
+21. Priority Scheduling 
+22. Round Robin Scheduling 
+
+23. Producer Consumer Problem 
+24. Banker’s Algorithm 
+
+25. Explain Cache
+    Cache Memory is a special very high-speed memory. It is used to speed up and synchronizing with high-speed CPU,
+    Cache memory is costlier than main memory or disk memory but economical than CPU registers,
+    Cache memory is an extremely fast memory type that acts as a buffer between RAM and the CPU,
+    It holds frequently requested data and instructions so that they are immediately available to the CPU when needed.
+
+    Cache memory is used to reduce the average time to access data from the Main memory,
+    The cache is a smaller and faster memory which stores copies of the data from frequently used main memory locations.
+    There are various different independent caches in a CPU, which store instructions and data.
+
+
+26. Diff between direct mapping and associative mapping 
+27. Diff between multitasking and multiprocessing 
+     multitasking :     Pre-emptive
+     multiprogramming : Non Pre-emptive
+
+28. Diff between Deadlock and Starvation.
+     Deadlock occurs when none of the processes in the set is able to move ahead due to occupancy 
+     of the required resources by some other process as shown in the figure below,
+     on the other hand Starvation occurs when a process waits for an indefinite period of time to get the resource it requires.
+
+     Other name of deadlock is Circular Waiting. Other name of starvation is Lived lock.
+
+     When deadlock occurs no process can make progress, while in starvation apart from the victim process other processes can progress or proceed.
