@@ -14,3 +14,151 @@ https://drive.google.com/file/d/1JL8JO1OhKEKiFB_fENUiRI8A55oviGWa/view?usp=shari
 Transaction
 
 Schedule 
+
+
+
+
+
+
+
+Stiver
+
+DBMS: 
+1. What is DBMS ? Mention advantages.. 
+    DBMS stands for Database management system. DBMS is the software which is used to manage databases
+    Better Data Transferring
+    Better Data Security
+    Better data integration
+    Minimized Data Inconsistency and Redundanecy
+    Faster data Access
+
+2. What is Database?
+
+    A database is an organized collection of data, so that it can be easily accessed and managed
+
+    Hierarchical databases
+    Network databases
+    Relational databases
+    NoSQL databases 
+
+3. What is a database system? 
+   
+   same as DBMS
+
+4. What is RDBMS ? Properties.
+
+    Relational Database is a database system that stores and retrieves data in a tabular format organized 
+    in the form of rows and columns
+
+    Values are atomic.
+    All of the values in a column have the same data type.
+    Each row is unique.
+    Each column has a unique name.
+    Integrity constraints maintain data consistency across multiple tables.
+
+5. Types of database languages 
+   
+   Data definition language (DDL) 
+   Data manipulation language (DML) 
+   Data control language (DCL) 
+   Transaction control language 
+
+6. ACID properties (VVVVV IMP) 
+   Atomicity   : Transaction occur complete. No resume only restart
+   Consistency : Database must be consistent before and after transaction.  integrity constraints must be maintained
+   Isolation   : multiple transaction occur together independently
+   Durability  : Change in database is permanent
+
+7. Difference between vertical and horizontal scaling 
+   
+   Scaling alters size of a system. In the scaling process, we either compress or expand the system to meet the expected needs
+
+   Horizontal : When new server racks are added in the existing system to meet the higher expectation   easy to implement     expensive
+   Vertical : When new resources are added in the existing system to meet the expectation               hard to implememt     cheap
+   
+8. What is sharding 
+   
+    Sharding is a type of DataBase partitioning in which a large DataBase is divided or partitioned into smaller data, also known as shards.
+
+9. Keys in DBMS 
+   
+   Candidate Key, Primary Key, Foregin Key, Super key
+
+10. Types of relationship 
+    One to One relationship
+    One to many or many to one relationship
+    Many to many relationships
+
+11. Data abstraction in DBMS, three levels of it 
+
+    Database systems comprise complex data-structures.
+    Developers use abstraction i.e. hide irrelevant details from the users.
+
+    Physical: This is the lowest level of data abstraction. It tells us how the data is actually stored in memory
+    Logical: This level comprises the information that is actually stored in the database in the form of tables.
+    View: This is the highest level of abstraction. Only a part of the actual database is viewed by the users
+
+12. Indexing in DBMS 
+      Indexing is used to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed.
+      The index is a type of data structure. It is used to locate and access the data in a database table quickly.
+
+13. What is DDL (Data Definition Language) 
+    
+     Data Definition Language actually consists of the SQL commands that can be used to define the database schema. 
+     It simply deals with descriptions of the database schema
+     Eg : create, drop, alter, truncate, rename
+
+
+14. What is DML (Data Manipulation Language)
+    
+    Commands that deals with the manipulation of data present in the database.
+    eg : Insert, update, DELETE
+    
+15. What is normalization ? Types of them .. 
+    Normalization is a process of organizing the data in database to avoid 
+    ,data redundancy, insertion anomaly, update anomaly & deletion anomaly
+
+16. What is denormalization ? 
+    Denormalization is a database optimization technique in which we add redundant data to one or more tables,
+    This can help us avoid costly joins in a relational database,
+    Note that denormalization does not mean not doing normalization. 
+    It is an optimization technique that is applied after doing normalization. 
+
+17. What is functional dependency ? 
+    
+    The functional dependency is a relationship that exists between two attributes.
+    Trival, Non-Trivial
+
+    It typically exists between the primary key and non-key attribute within a table.
+
+18. E-R Model ? 
+    
+    ER model stands for an Entity-Relationship model,
+    It is a high-level data model. This model is used to define the data elements and relationship for a specified system.
+    It develops a conceptual design for the database. It also develops a very simple and easy to design view of data.
+
+19. Conflict Serializability in DBMS
+   A schedule is called conflict serializability if after swapping of non-conflicting operations, it can transform into a serial schedule.
+
+20. Explain Normal forms in DBMS 
+21. What is CCP ? (Concurrency Control Protocols) 
+22. Entity, Entity Type, Entity Set, Weak Entity Set 
+23. What are SQL commands ? Types of them.. 
+24. Nested Queries in SQL ? 
+25. What is JOIN .. Explain types of JOINs 
+26. Inner and Outer Join 
+27. Practice sql queries from leetcode
+28. Diff between 2 tier and 3 tier architecture 
+29. Diff between TRUNCATE and DELETE command and DROP
+    
+    DELETE
+    Basically, it is a Data Manipulation Language Command (DML). It is use to delete the one or more tuples of a table. With the help of “DELETE”
+
+    DROP
+    It is a Data Definition Language Command (DDL). It is use to drop the whole table.
+
+    TRUNCATE
+    It is also a Data Definition Language Command (DDL). It is use to delete all the rows of a relation (table) in one go.
+
+30. Difference between Intension and Extension in a DataBase
+31. Difference between share lock and exclusive lock, definition of lock 

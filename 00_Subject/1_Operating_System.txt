@@ -140,7 +140,7 @@ What is spooling ?
 
 8. What is semaphore and mutex (Differences might be asked)? Define Binary semaphore. 
 
-   Semaphore is simply a variable that is non-negative and shared between threads,
+   Semaphore is simply a variable , shared between threads,
    This variable is used to solve the critical section problem and to achieve process synchronization in the multiprocessing environment. 
 
    Binary Semaphore – 
@@ -260,6 +260,16 @@ b   Segmentation is a memory management technique in which the memory is divided
 
 
 26. Diff between direct mapping and associative mapping 
+    
+    The process /technique of bringing data of main memory blocks into the cache block is known as cache mapping.
+    1. Direct Mapping : 
+       Each block from main memory has only one possible place in the cache organization in this technique. 
+
+    2. Associative Mapping :
+       Here the mapping of the main memory block can be done with any of the cache block,
+       The memory address has only 2 fields here : word & tag,
+       This technique is called as fully associative cache mapping.
+    
 27. Diff between multitasking and multiprocessing 
      multitasking :     Pre-emptive
      multiprogramming : Non Pre-emptive

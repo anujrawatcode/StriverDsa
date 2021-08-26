@@ -1,0 +1,114 @@
+Introduction
+ Overview
+ Classes & Objects
+ Methods
+ Polymorphism
+ Constructors
+ [static] keyword
+ [this] keyword
+ Inheritance
+ Encapsulation
+ Abstraction
+ [abstract] keyword
+ Interfaces
+
+
+Class :
+ A class is a user defined blueprint or prototype from which objects are created,
+ It represents the set of properties or methods that are common to all objects of one type
+
+Objects : 
+ It is a basic unit of Object-Oriented Programming and represents the real life entities
+
+Methods :
+ A method is a collection of statements that perform some specific task and return the result to the caller.
+ A method can perform some specific task without returning anything. 
+ Methods allow us to reuse the code without retyping the code.
+
+Pillars of OOPS
+  Abstraction
+  Encapsulation
+  Inheritance
+  Polymorphism
+     Compile-time polymorphism
+     Run-time polymorphism
+
+
+Abstraction:
+  Abstraction is the concept of object-oriented programming that "shows" only essential attributes 
+  and "hides" unnecessary information.
+  The main purpose of abstraction is hiding the unnecessary details from the users
+  Methods achive it.
+
+Encapsulation:
+  encapsulation (or OOP Encapsulation) refers to the bundling of data, 
+  along with the methods that operate on that data, into a single unit. 
+  Eg > Classes have binded properties and methord
+
+Inheritance:
+  Inheritance is the procedure in which one class inherits the attributes and methods of another class
+
+Polymorphism:
+  Polymorphism means having many forms. In simple words,
+  We can define polymorphism as the ability of a message to be displayed in more than one form.
+
+  1. Compile-time polymorphism:
+    It is also known as static polymorphism. This type of polymorphism is achieved by function overloading 
+  
+  2. Runtime polymorphism: 
+    It is also known as Dynamic Method Dispatch, It is a process in which a function call to the overridden method 
+    is resolved at Runtime. This type of polymorphism is achieved by Method Overriding.
+
+Constructor:
+  A constructor is a special type of member function of a class which initializes objects of a class.
+  
+  Constructor has same name as the class itself
+  Constructors don’t have return type
+  A constructor is automatically called when an object is created.
+  It must be placed in public section of class.
+  If we do not specify a constructor, C++ compiler generates a default constructor for object (
+
+Static:
+  The static keyword in Java is used for memory management mainly.
+  We can apply static keyword with variables, methods
+
+  The static can be:
+        Variable (also known as a class variable)
+        Method (also known as a class method)
+  
+  Static variable belongs to class.
+    The static variable can be used to refer to the common property of all objects.
+    The static variable gets memory only once in the class area at the time of class loading.
+  
+  Static methord
+    A static method belongs to the class rather than the object of a class.
+    A static method can be invoked without the need for creating an instance of a class.
+    A static method can access static data member and can change the value of it.
+
+
+This : 
+   this is a reference variable that refers to the current object.
+  
+   this can be used to refer current class instance variable.
+   this can be used to invoke current class method (implicitly)
+   this() can be used to invoke current class constructor.
+   this can be passed as an argument in the method call.
+   this can be passed as argument in the constructor call.
+
+Abstract :
+
+  abstract is a non-access modifier applicable for classes, methods but not variables.
+  
+  There are two ways to achieve abstraction in java
+
+    Abstract class (0 to 100%)
+    Interface (100%)
+
+  A class which is declared as abstract is known as an abstract class.
+  It can have abstract and non-abstract methods. It needs to be extended and its method implemented.
+  It cannot be instantiated. No Object can be created
+  
+
+  Like a class, an interface can have methods and variables,
+  but the methods declared in an interface are by default abstract (only method signature, no body).  
+  Interfaces specify what a class must do and not how. It is the blueprint of the class.
