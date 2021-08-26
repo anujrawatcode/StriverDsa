@@ -1,0 +1,12 @@
+command line commands 
+1. tree of current dir
+2. organize current dir
+
+file system
+path module
+
+fs.exisitsSync()
+fs.mkdirSync()
+fs.copyFileSync()
+
+#! shebang syntex

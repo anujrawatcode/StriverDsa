@@ -1,5 +1,76 @@
 Stack and Queue
 
+   Question Solved in paper 
+
+   Implement Stack using Array
+
+   Implement Queue using Array
+
    Next Greater Element     https://leetcode.com/problems/next-greater-element-i/      
 
    The Celebrity Problem    https://www.geeksforgeeks.org/the-celebrity-problem/
+
+
+Binary Tree
+
+   https://leetcode.com/problems/balanced-binary-tree/
+
+   https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+
+   https://leetcode.com/problems/symmetric-tree/
+
+   https://leetcode.com/problems/diameter-of-binary-tree/
+
+   https://leetcode.com/problems/binary-tree-level-order-traversal/
+
+   https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+
+   https://www.geeksforgeeks.org/bottom-view-binary-tree/
+
+   https://www.geeksforgeeks.org/print-left-view-binary-tree/
+
+
+Binary Search Tree
+
+   Search given Key in BST : https://leetcode.com/problems/search-in-a-binary-search-tree/
+   
+   Check is a BT is BST or not : https://leetcode.com/problems/validate-binary-search-tree/
+
+   Find LCA of two nodes in BST :  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+
+
+Dynamic Programming
+
+   Max Product Subarray : https://leetcode.com/problems/maximum-product-subarray/
+
+   Longest Increasing Subsequence : https://leetcode.com/problems/longest-common-subsequence
+
+   Longest Common Subsequence : https://leetcode.com/problems/longest-common-subsequence
+
+   0-1 Knapsack : https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+
+   Edit Distance : https://leetcode.com/submissions/detail/527662524/
+
+   Matrix Chain Multiplication  : https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/
+
+   Coin change : https://leetcode.com/problems/coin-change/
+
+   Egg Dropping : https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/
+
+
+
+Graph
+   
+   BFS
+
+   DFS
+
+   Cycle Detection
+
+   Topological sort
+
+
+
+
+
+

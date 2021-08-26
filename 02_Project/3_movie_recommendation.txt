@@ -1,0 +1,14 @@
+2 tmdb data-set credit and movies
+
+algo can be applied are :
+
+1. Demographic Filtering
+2. Content-based Filtering 
+    TF-IDF-Vectors
+    Term frequency, inverse document frequency
+
+    formula
+    cosine similarity
+    count vector 
+
+    

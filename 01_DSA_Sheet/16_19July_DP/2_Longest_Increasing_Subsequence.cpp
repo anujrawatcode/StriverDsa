@@ -11,6 +11,7 @@ int lengthOfLIS(vector<int> &arr, int n)
     { 
         for (int j = 0; j < i; j++) // back pointer
         {
+            //  no is increasing    
             if (arr[i] > arr[j] && lis[i] <= lis[j])
                 lis[i] = lis[j] + 1;
         }

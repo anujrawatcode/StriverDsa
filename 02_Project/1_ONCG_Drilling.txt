@@ -1,0 +1,63 @@
+ Wellsite Information Transfer Standard Markup Language (WITSML) is a standard for sending well site information in an XML document format between business partners.
+
+ All information from objects are not extracted and effectively used
+
+ collaborative approach using text mining to mine-unfavourable events
+
+ 1. Information Reterieval
+ 2. Inforamtion Extraction
+ 3. Clustering
+ 4. Pattern Identification
+
+on daily drilling report from well
+
+text mining convert unstructured in-to structured
+
+This approach build an effective risk inventoy that can 
+be used for futue planning
+
+We focused in 
+  Reterieval
+  Extraction
+  Bag of Words & frequency distribution
+  Clustering
+  Pattern
+
+
+1. Reterieval : Mentor gave used
+
+2. Inforamtion Extraction : pre-processng data by applying technique
+                            tokenization, stemming, eliminating stop-word
+
+                            text is visualised based on words and their frequency 
+                            using Bag of Words
+
+3. Clustering and Pattern Identification : words are grouped toether based on words
+                                         which appear together within the same context 
+                                         by applying  k-means Clustering 
+
+
+numpy
+pandas
+matplotlib
+nltk
+sklearn
+Tfidfvectororizer
+KMeans
+bag of word
+tokenization
+
+
+Tokenization is a way of separating a piece of text into smaller units called tokens.
+  Here, tokens can be either words,
+word tokenizer  It splits a piece of text into individual words 
+
+To put simply, stemming is the process of removing a part of a word,
+ or reducing a word to its stem or root
+
+ stopword in english like  , at, a, the.
+
+Bag of Words model is used to preprocess the text by converting it into a bag of words,
+ which keeps a count of the total occurrences of most frequently used words 
+
+
